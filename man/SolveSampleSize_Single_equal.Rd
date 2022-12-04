@@ -23,3 +23,6 @@ This function calculates the optimal sample size for each treatment group
 when 1) the response variable is binary; 2) we analyze it in isolation (w/o the existing network);
 3) the sample size for each treatment group is required to be equal.
 }
+\examples{
+SolveSampleSize_Single_equal(p1 = 0.2, p2 = 0.3,power_level = 0.8)
+}

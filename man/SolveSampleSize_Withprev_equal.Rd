@@ -26,3 +26,6 @@ when planning a new two-arm trial with 1) two arms exist in the existing network
 2) the response variable is binary; 3) we analyze it with the existing network by NMA.
 4) the sample size for each treatment group is required to be equal.
 }
+\examples{
+SolveSampleSize_Withprev_equal(p1 = 0.2, p2 = 0.3, sigma = 0.4, power_level = 0.8)
+}

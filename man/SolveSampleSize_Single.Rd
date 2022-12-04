@@ -22,3 +22,6 @@ the optimal sample size for each treatment group
 This function calculates the optimal sample size for each treatment group
 when 1) the response variable is binary; 2) we analyze it in isolation (w/o the existing network);
 }
+\examples{
+SolveSampleSize_Single(p1 = 0.2, p2 = 0.3,power_level = 0.8)
+}

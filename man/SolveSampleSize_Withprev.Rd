@@ -25,3 +25,6 @@ This function calculates the optimal sample size for each treatment group
 when planning a new two-arm trial with 1) two arms exist in the existing network;
 2) the response variable is binary; 3) we analyze it with the existing network by NMA.
 }
+\examples{
+SolveSampleSize_Withprev(p1 = 0.2, p2 = 0.3, sigma = 0.4, power_level = 0.8)
+}
