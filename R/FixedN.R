@@ -11,10 +11,8 @@
 #' @param method a character string specifying the method of analyzing the new trial, must be one of 'with' (default) or 'without'
 #' @param allocation a character string specifying the type of sample size allocation between two groups, must be one of 'uneven' (default) or 'even'.
 #' @return A list with the following components:
-#' \itemize{
-#'   \item{sample_alloc}{Sample size allocation to each treatment group.}
-#'   \item{power}{Power of the test.}
-#' }
+#'  \item{sample_alloc}{Sample size allocation to each treatment group.}
+#'  \item{power}{Power of the test.}
 #' @export
 #' @examples
 #' ssa_nma(p1 = 0.2, p2 = 0.3, enma_sigma = 0.4, N = 200)
