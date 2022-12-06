@@ -31,10 +31,8 @@ ssa_nma(
 }
 \value{
 A list with the following components:
-\itemize{
 \item{sample_alloc}{Sample size allocation to each treatment group.}
 \item{power}{Power of the test.}
-}
 }
 \description{
 This function calculates the optimal sample size allocation for each treatment group
