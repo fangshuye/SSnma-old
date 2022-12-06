@@ -8,8 +8,8 @@
 #' @param enma_sigma Standard error of the estimated effect size (log odds ratio) between treatment 1 and treatment 2 from the existing network
 #' @param power.level Power of test we want to obtain
 #' @param sig.level Significance level, the default value is 0.05  
-#' @param method: a character string specifying the method of analyzing the new trial, must be one of 'with' (default) or 'without'
-#' @param allocation: a character string specifying the type of sample size allocation between two groups, must be one of 'uneven' (default) or 'even'.
+#' @param method a character string specifying the method of analyzing the new trial, must be one of 'with' (default) or 'without'
+#' @param allocation a character string specifying the type of sample size allocation between two groups, must be one of 'uneven' (default) or 'even'.
 #' @return the optimal sample size for each treatment group
 #' @export
 #' @examples
