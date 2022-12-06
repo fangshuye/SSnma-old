@@ -11,8 +11,10 @@
 #' @param method a character string specifying the method of analyzing the new trial, must be one of 'with' (default) or 'without'
 #' @param allocation a character string specifying the type of sample size allocation between two groups, must be one of 'uneven' (default) or 'even'.
 #' @return A list with the following components:
-#' @param sample_alloc Sample size allocation to each treatment group
-#' @param power Power of the test
+#' \itemize{
+#'   \item sample_alloc - Sample size allocation to each treatment group.
+#'   \item power - Power of the test.
+#' }
 #' @export
 #' @examples
 #' ass_nma(p1 = 0.2, p2 = 0.3, enma_sigma = 0.4, N = 200)
@@ -47,12 +49,12 @@ ass_nma <- function(p1,p2,enma_sigma,N,sig.level = 0.05, method = "with", alloca
     n1 + n2 - s
   }
   if(allocation == "uneven"){
-    sample_alloc <- DEoptimR::JDEoptim(lower = c(0,0), upper = c(s,s), 
+    suppressWarnings(sample_alloc <- DEoptimR::JDEoptim(lower = c(0,0), upper = c(s,s), 
                                        fn = var_fn, constr = con_fn, 
                                        meq = 1, triter = 50, 
                                        mu_1 = mu_1, 
                                        mu_2 = mu_2, 
-                                       s = s)
+                                       s = s))
     sample_alloc <- round(sample_alloc$par,0)
   }else{
     sample_alloc <- c(N/2, N/2)
