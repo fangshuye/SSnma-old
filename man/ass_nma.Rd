@@ -28,13 +28,13 @@ ass_nma(
 \item{method}{a character string specifying the method of analyzing the new trial, must be one of 'with' (default) or 'without'}
 
 \item{allocation}{a character string specifying the type of sample size allocation between two groups, must be one of 'uneven' (default) or 'even'.}
-
-\item{sample_alloc}{Sample size allocation to each treatment group}
-
-\item{power}{Power of the test}
 }
 \value{
 A list with the following components:
+\itemize{
+\item sample_alloc - Sample size allocation to each treatment group.
+\item power - Power of the test.
+}
 }
 \description{
 This function calculates the optimal sample size allocation for each treatment group
