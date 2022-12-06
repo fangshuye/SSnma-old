@@ -12,13 +12,13 @@
 #' @param allocation a character string specifying the type of sample size allocation between two groups, must be one of 'uneven' (default) or 'even'.
 #' @return A list with the following components:
 #' \itemize{
-#'   \item sample_alloc - Sample size allocation to each treatment group.
-#'   \item power - Power of the test.
+#'   \item{sample_alloc}{Sample size allocation to each treatment group.}
+#'   \item{power}{Power of the test.}
 #' }
 #' @export
 #' @examples
-#' ass_nma(p1 = 0.2, p2 = 0.3, enma_sigma = 0.4, N = 200)
-ass_nma <- function(p1,p2,enma_sigma,N,sig.level = 0.05, method = "with", allocation = "uneven"){
+#' ssa_nma(p1 = 0.2, p2 = 0.3, enma_sigma = 0.4, N = 200)
+ssa_nma <- function(p1,p2,enma_sigma,N,sig.level = 0.05, method = "with", allocation = "uneven"){
   # cal the total sample size when we added one more condition: sample sizes are equal for both treatment groups
   beta1 = log(p1/(1-p1))
   beta2 = log(p2/(1-p2)) - log(p1/(1-p1))
